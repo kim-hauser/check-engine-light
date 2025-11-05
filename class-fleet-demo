@@ -27,17 +27,13 @@ class FleetCars {
         console.log(`Year: ${this.year}`);
         console.log(`Mileage: ${this.mileage}`);
     };
-
-    getCarString() {
-        return `Vehicle Details:\nMake: ${this.type}\nModel: ${this.make}\nYear: ${this.model}\nColor: ${this.year}\nVIN: ${this.mileage}`;
-    }
 }
 
 let car1 = new FleetCars ('Sedan', 'Toyota', 'Corolla', 2018, 100000);
 let car2 = new FleetCars ('SUV', 'Subaru', 'Outback', 2023, 50000);
 let car3 = new FleetCars ('SUV', `Chevrolet`,'Blazer', 2020, 150000);
 
-car2.drive(500); // Updates mileage to car2 (Cartee's Outback)
+car2.drive(-2); // Updates mileage to car2 (Cartee's Outback)
 
 console.log(`${car1.model}\n`) // Displays model name for car1 (My Corolla).
 
